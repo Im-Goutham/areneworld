@@ -15,15 +15,15 @@ class Contact extends Component {
   }
   render() {
         return (
-            <section id="contact" className="section" data-stellar-background-ratio="-0.2">      
+            <section id="contact" className="section" data-stellar-background-ratio="-0.2">
             <div className="contact-form">
               <div className="container">
-                <div className="row">     
+                <div className="row">
                   <div className="col-lg-6 col-sm-6 col-xs-12">
                     <div className="contact-us">
                       <h3>Contact With us</h3>
                       <div className="contact-address">
-                        <p>Centerville Road, DE 19808, US </p>
+                        <p>Workshop address pendurthi, Visakhapatnam, Andhra Pradesh, India</p>
                         <p className="phone">Phone: <span>(+94 123 456 789)</span></p>
                         <p className="email">E-mail: <span>(contact@mate.com)</span></p>
                       </div>
@@ -37,7 +37,7 @@ class Contact extends Component {
                         </ul>
                       </div>
                     </div>
-                  </div>     
+                  </div>
                   <div className="col-lg-6 col-sm-6 col-xs-12">
                     <div className="contact-block">
                       <form id="contactForm">
@@ -46,32 +46,32 @@ class Contact extends Component {
                             <div className="form-group">
                               <input type="text" className="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name" />
                               <div className="help-block with-errors" />
-                            </div>                                 
+                            </div>
                           </div>
                           <div className="col-md-12">
                             <div className="form-group">
                               <input type="text" placeholder="Your Email" id="email" className="form-control" name="name" required data-error="Please enter your email" />
                               <div className="help-block with-errors" />
-                            </div> 
+                            </div>
                           </div>
                           <div className="col-md-12">
-                            <div className="form-group"> 
+                            <div className="form-group">
                               <textarea className="form-control" id="message" placeholder="Your Message" rows={8} data-error="Write your message" required defaultValue={""} />
                               <div className="help-block with-errors" />
                             </div>
                             <div className="submit-button text-center">
                               <button className="btn btn-common" id="submit" type="submit">Send Message</button>
-                              <div id="msgSubmit" className="h3 text-center hidden" /> 
-                              <div className="clearfix" /> 
+                              <div id="msgSubmit" className="h3 text-center hidden" />
+                              <div className="clearfix" />
                             </div>
                           </div>
-                        </div>            
+                        </div>
                       </form>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>           
+            </div>
             </section>
         );
   }

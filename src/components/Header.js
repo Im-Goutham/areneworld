@@ -15,7 +15,7 @@ class HeaderComponent extends Component {
   }
   render() {
         return (
-            <header id="hero-area" data-stellar-background-ratio="0.5">    
+            <header id="hero-area" data-stellar-background-ratio="0.5">
             {/* Navbar Start */}
             <nav className="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
               <div className="container">
@@ -81,21 +81,21 @@ class HeaderComponent extends Component {
               </ul>
               {/* Mobile Menu End */}
             </nav>
-            {/* Navbar End */}   
-            <div className="container">      
+            {/* Navbar End */}
+            <div className="container">
               <div className="row justify-content-md-center">
                 <div className="col-md-10">
                   <div className="contents text-center">
-                    <h1 className="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Interior Designs</h1>
-                    <p className="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-    
+                    <h1 className="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Creating your space. Detail by detail.</h1>
+                    <p className="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms"> </p>
+
                   </div>
                 </div>
-              </div> 
-            </div>           
+              </div>
+            </div>
           </header>
         );
-    
+
 
   }
 }
