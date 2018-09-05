@@ -1,103 +1,51 @@
 import React, { Component } from 'react';
+import {withRouter} from 'react-router-dom';
 
-
-class HeaderComponent extends Component {
-
+class Header extends Component {
   constructor(){
-      super();
-      this.state = {
-          loading: true
-      }
+     super();
+     this.route = this.route.bind(this);
   }
-
-  componentDidMount(){
-      this.setState({loading:false})
+  route(path){
+     this.props.history.push('/'+path);
   }
   render() {
-        return (
-            <header id="hero-area" data-stellar-background-ratio="0.5">
-            {/* Navbar Start */}
-            <nav className="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-              <div className="container">
-                {/* Brand and toggle get grouped for better mobile display */}
-                <div className="navbar-header">
-                  <a href="/" className="navbar-brand"><img className="img-fulid" src="img/logo.jpg" style={{width: 150}} alt /></a>
-                  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <i className="lnr lnr-menu" />
-                  </button>
-                </div>
-                <div className="collapse navbar-collapse" id="main-navbar">
-                  <ul className="navbar-nav mr-auto w-100 justify-content-end">
-                    <li className="nav-item">
-                      <a className="nav-link page-scroll" href="#hero-area">Home</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link page-scroll" href="#services">Services</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link page-scroll" href="#features">Features</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link page-scroll" href="#portfolios">Works</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link page-scroll" href="#pricing">Pricing</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link page-scroll" href="#team">Team</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link page-scroll" href="#contact">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              {/* Mobile Menu Start */}
-              <ul className="mobile-menu">
-                <li>
-                  <a className="page-scroll" href="#hero-area">Home</a>
-                </li>
-                <li>
-                  <a className="page-scroll" href="#services">Services</a>
-                </li>
-                <li>
-                  <a className="page-scroll" href="#features">Features</a>
-                </li>
-                <li>
-                  <a className="page-scroll" href="#portfolios">Works</a>
-                </li>
-                <li>
-                  <a className="page-scroll" href="#pricing">Pricing</a>
-                </li>
-                <li>
-                  <a className="page-scroll" href="#team">Team</a>
-                </li>
-                <li>
-                  <a className="page-scroll" href="#blog">Blog</a>
-                </li>
-                <li>
-                  <a className="page-scroll" href="#contact">Contact</a>
-                </li>
-              </ul>
-              {/* Mobile Menu End */}
-            </nav>
-            {/* Navbar End */}
-            <div className="container">
-              <div className="row justify-content-md-center">
-                <div className="col-md-10">
-                  <div className="contents text-center">
-                    <h1 className="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Creating your space. Detail by detail.</h1>
-                    <p className="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms"> </p>
-
-                  </div>
-                </div>
+    let path = this.props.history.location.pathname;
+    return (
+      <header className="header-area bg-1" id="sticky-header">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-3 col-md-9 col-sm-8 col-6">
+              <div className="logo">
+                <a onClick={this.route.bind(this,'')}><img style={{width:'150px'}} src="assets/images/logo.png" alt /></a>
               </div>
             </div>
-          </header>
-        );
+            <div className="col-lg-8 d-none d-lg-block">
+              <div className="mainmenu">
+                <ul id="navigation">
+                  <li className={path=='/' ? 'active' : ''}><a  style={{cursor:'pointer'}} onClick={this.route.bind(this,'')}>Home</a>
+                  </li>
+                  <li className={path=='/about' ? 'active' : ''}><a style={{cursor:'pointer'}} onClick={this.route.bind(this,'about')}>About</a>
+                  </li>
+                  <li className={path=='/project' ? 'active' : ''}><a style={{cursor:'pointer'}} onClick={this.route.bind(this,'project')}>Projects</a>
+                  </li>
+                  <li className={path=='/team' ? 'active' : ''}><a style={{cursor:'pointer'}} onClick={this.route.bind(this,'team')}>Team</a>
+                  </li>
+                  <li className={path=='/contact' ? 'active' : ''}><a style={{cursor:'pointer'}}  onClick={this.route.bind(this,'contact')}>Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-lg-1 col-md-2 col-sm-3 col-4">
 
-
+            </div>
+            <div className="col-md-1 col-sm-1 col-2 d-lg-none d-sm-block">
+              <div className="responsive-menu-wrap floatright" />
+            </div>
+          </div>
+        </div>
+      </header>
+    );
   }
 }
 
-export default HeaderComponent;
+export default withRouter(Header);
