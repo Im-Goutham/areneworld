@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 
 
 class Contact extends Component {
+  componentDidMount() {
+  window.scrollTo(0, 0)
+}
   render() {
     return (
       <div>
@@ -15,7 +18,7 @@ class Contact extends Component {
                  <div className="breadcumb-wrap">
                    <h2>Contact Us</h2>
                    <ul>
-                     <li><a href="index.html">Home</a></li>
+                     <li><a href="/">Home</a></li>
                      <li>/</li>
                      <li>Contact</li>
                    </ul>
@@ -59,21 +62,20 @@ class Contact extends Component {
                      <li>
                        <i className="fa fa-phone" /> Phone number
                        <p>
-                         <span>+ (0012) 123 456 789</span>
-                         <span>+ (0012) 123 456 789</span>
+                         <span>Sales: +91-7730915052</span>
+                         <span>Support: +91-9121097659</span>
                        </p>
                      </li>
                      <li>
                        <i className="fa fa-envelope" /> Email Id
                        <p>
-                         <span>info145@gmail.com</span>
-                         <span>info145@gmail.com</span>
+                         <span>areneword@gmail.com</span>
                        </p>
                      </li>
                      <li>
                        <i className="fa fa-location-arrow" /> Location
                        <p>
-                         <span>+227 Marion Street Address Here Columbia, SC 29201</span>
+                         <span>Workshop: Pendurthi, Visakhaptnam, Andhra Pradesh, INDIA</span>
                        </p>
                      </li>
                    </ul>

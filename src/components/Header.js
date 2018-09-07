@@ -39,7 +39,7 @@ class Header extends Component {
 
             </div>
             <div className="col-md-1 col-sm-1 col-2 d-lg-none d-sm-block">
-              <div className="responsive-menu-wrap floatright" />
+              <div className="responsive-menu-wrap floatright" ></div>
             </div>
           </div>
         </div>

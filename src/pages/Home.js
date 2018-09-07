@@ -1,68 +1,19 @@
 import React, { Component } from 'react';
 import AboutArea from '../components/AboutArea';
 import TeamMembers from '../components/TeamMembers';
+import Banner from '../components/Banner';
+
 
 class Home extends Component {
+  componentDidMount() {
+  window.scrollTo(0, 0)
+}
  render() {
    return (
      <div>
             {/* header-area end */}
             {/* slider-area start */}
-            <div className="slider-area">
-              <div className="slider-active next-prev-style">
-                <div className="slider-items">
-                  <img src="assets/images/slider/1.jpg" alt className="slider" />
-                  <div className="slider-content">
-                    <div className="container">
-                      <div className="row">
-                        <div className="col-12">
-                          <div className="slider-text">
-                            <div className="line" />
-                            <h2><span className="d-block">Discover</span>Your Dream  <span className="color">Home</span> </h2>
-                            <p>Why Over <span>50,0000+ </span> Customers Have Choosen <span>Architecture &amp; Interior</span> Design. </p>
-                            <a href="project.html">See Project <i className="fa fa-long-arrow-right" /></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="slider-items">
-                  <img src="assets/images/slider/2.jpg" alt className="slider" />
-                  <div className="slider-content">
-                    <div className="container">
-                      <div className="row">
-                        <div className="col-12">
-                          <div className="slider-text">
-                            <div className="line" />
-                            <h2><span className="color">Archirio</span> Service<span className="d-block">studio</span></h2>
-                            <p>Why Over <span>50,0000+ </span> Customers Have Choosen <span>Architecture &amp; Interior</span> Design. </p>
-                            <a href="project.html">See Project <i className="fa fa-long-arrow-right" /></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="slider-items">
-                  <img src="assets/images/slider/9.jpg" alt className="slider" />
-                  <div className="slider-content">
-                    <div className="container">
-                      <div className="row">
-                        <div className="col-12">
-                          <div className="slider-text">
-                            <div className="line" />
-                            <h2><span className="d-block">Discover</span>Your Dream  <span className="color">Home</span> </h2>
-                            <p>Why Over <span>50,0000+ </span> Customers Have Choosen <span>Architecture &amp; Interior</span> Design. </p>
-                            <a href="project.html">See Project <i className="fa fa-long-arrow-right" /></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Banner/>
             {/* slider-area end */}
             {/* ablout-area start */}
             <AboutArea/>

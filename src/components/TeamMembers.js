@@ -18,7 +18,7 @@ class TeamMembers extends Component {
             <div className="col-lg-3 col-md-4  col-sm-6 col-12">
               <div className="team-wrap">
                 <div className="team-img">
-                  <img src="assets/images/team/01.jpg" alt />
+                  <img src="assets/images/team/01.jpg" style={{height:'350px'}} />
                 </div>
                 <div className="team-content">
                   <h4>Sunil Kumar</h4>
@@ -34,7 +34,7 @@ class TeamMembers extends Component {
             <div className="col-lg-3 col-md-4  col-sm-6 col-12">
               <div className="team-wrap">
                 <div className="team-img">
-                  <img src="assets/images/team/2.jpg" alt />
+                  <img src="assets/images/team/02.jpg" style={{height:'350px'}} />
                 </div>
                 <div className="team-content">
                   <h4>Tulasi Ratnam</h4>
@@ -49,12 +49,12 @@ class TeamMembers extends Component {
             </div>
             <div className="col-lg-3 col-md-4  col-sm-6 col-12">
               <div className="team-wrap">
-                  <img src="assets/images/team/03.jpg" alt />
+                  <img src="assets/images/team/03.jpg" style={{height:'350px'}} />
                   <div className="team-img">
                 </div>
                 <div className="team-content">
                   <h4>Pol Biz</h4>
-                  <p>Web Developer</p>
+                  <p>Interior Designer</p>
                   <ul>
                     <li><a href="#"><i className="fa fa-facebook" /></a></li>
                     <li><a href="#"><i className="fa fa-twitter" /></a></li>
@@ -66,11 +66,11 @@ class TeamMembers extends Component {
             <div className="col-lg-3 col-md-4 col-sm-6 col-12">
               <div className="team-wrap">
                 <div className="team-img">
-                  <img src="assets/images/team/04.jpg" alt />
+                  <img src="assets/images/team/04.jpg" style={{height:'350px'}} />
                 </div>
                 <div className="team-content">
                   <h4>Goutham</h4>
-                  <p>Software Developer</p>
+                  <p>Web Developer</p>
                   <ul>
                     <li><a href="#"><i className="fa fa-facebook" /></a></li>
                     <li><a href="#"><i className="fa fa-twitter" /></a></li>

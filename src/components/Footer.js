@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {withRouter} from 'react-router-dom';
 
 class Footer extends Component {
   constructor(){
@@ -14,7 +15,7 @@ class Footer extends Component {
         <div className="footer-top bg-1">
           <div className="container">
             <div className="row">
-              <div className="col-lg-4 col-sm-6 col-12">
+              <div className="col-lg-5 col-sm-6 col-12">
                 <div className="footer-widget footer-logo">
                   <img style={{width:'200px'}} src="assets/images/logo.png" alt />
                   <p>Flush door & Furniture Manufacturing Interior designing & 3d Visualization Timber & Plywood Wholesale Supplier PVC Laminats Wholesale & Retail</p>
@@ -28,37 +29,27 @@ class Footer extends Component {
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-3 col-sm-6 col-12">
+              <div className="col-lg-4 col-sm-6 col-12">
                 <div className="footer-widget footer-contact">
                   <h4 className="widget-title">GET IN TOUCH</h4>
                   <ul>
-                    <li><i className="fa fa-home" /> 1265 North Avenue LukeLane South Bend, IN 3600025</li>
-                    <li><i className="fa fa-phone" /> +012 549 594</li>
-                    <li><i className="fa fa-fax" /> support@email.com</li>
-                    <li><i className="fa fa-envelope" /> support@email.com</li>
+                    <li><i className="fa fa-home" /> Workshop: Pendurthi, Visakhaptnam, Andhra Pradesh, INDIA</li>
+                    <li><i className="fa fa-phone" />Sales: +91-7730915052</li>
+                    <li><i className="fa fa-fax" /> Support: +91-9121097659</li>
+                    <li><i className="fa fa-envelope" /> support@areneword.com</li>
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-2 col-sm-6 col-12">
+              <div className="col-lg-3 col-sm-6 col-12">
                 <div className="footer-widget footer-menu">
                   <h4 className="widget-title">Services</h4>
                   <ul>
                     <li><a style={{cursor:'pointer'}} onClick={this.route.bind(this,'')}>Home</a></li>
-                    <li><a style={{cursor:'pointer'}} onClick={this.route.bind(this,'/about')}>About Us</a></li>
-                    <li><a style={{cursor:'pointer'}} onClick={this.route.bind(this,'/project')}>Our Works</a></li>
-                    <li><a style={{cursor:'pointer'}} onClick={this.route.bind(this,'/team')}>Team</a></li>
-                    <li><a style={{cursor:'pointer'}} onClick={this.route.bind(this,'/contact')}>Contact</a></li>
+                    <li><a style={{cursor:'pointer'}} onClick={this.route.bind(this,'about')}>About Us</a></li>
+                    <li><a style={{cursor:'pointer'}} onClick={this.route.bind(this,'project')}>Our Works</a></li>
+                    <li><a style={{cursor:'pointer'}} onClick={this.route.bind(this,'team')}>Team</a></li>
+                    <li><a style={{cursor:'pointer'}} onClick={this.route.bind(this,'contact')}>Contact</a></li>
                   </ul>
-                </div>
-              </div>
-              <div className="col-lg-3 col-sm-6 col-12">
-                <div className="footer-widget newsletter">
-                  <h4 className="widget-title">newsletter</h4>
-                  <p>Lorem Ipsum available, but the majority the have suffered alteration some.</p>
-                  <form action="#">
-                    <input type="text" placeholder="Enter Your Email" />
-                    <button>subscribe</button>
-                  </form>
                 </div>
               </div>
             </div>
@@ -78,4 +69,4 @@ class Footer extends Component {
   }
 }
 
-export default Footer;
+export default withRouter(Footer);
