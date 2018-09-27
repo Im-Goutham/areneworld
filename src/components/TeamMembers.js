@@ -53,7 +53,7 @@ class TeamMembers extends Component {
                   <div className="team-img">
                 </div>
                 <div className="team-content">
-                  <h4>Pol Biz</h4>
+                  <h4>Sree Ramya</h4>
                   <p>Interior Designer</p>
                   <ul>
                     <li><a href="#"><i className="fa fa-facebook" /></a></li>

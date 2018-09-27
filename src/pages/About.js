@@ -1,4 +1,5 @@
  import React, { Component } from 'react';
+ import TeamMembers from '../components/TeamMembers';
 
  class About extends Component {
    componentDidMount() {
@@ -84,84 +85,7 @@
               </div>
               {/* ablout-area end */}
               {/* team-area start */}
-              <div className="team-area bg-1">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-12">
-                      <div className="section-title text-center">
-                        <h2>our great team</h2>
-                        <h3>A wall for our project glory and a place to find more</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-3 col-md-4  col-sm-6 col-12">
-                      <div className="team-wrap">
-                        <div className="team-img">
-                          <img src="assets/images/team/01.jpg" alt />
-                        </div>
-                        <div className="team-content">
-                          <h4>Suzeo deago</h4>
-                          <p>Interior designer</p>
-                          <ul>
-                            <li><a href="#"><i className="fa fa-facebook" /></a></li>
-                            <li><a href="#"><i className="fa fa-twitter" /></a></li>
-                            <li><a href="#"><i className="fa fa-google-plus" /></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4  col-sm-6 col-12">
-                      <div className="team-wrap">
-                        <div className="team-img">
-                          <img src="assets/images/team/2.jpg" alt />
-                        </div>
-                        <div className="team-content">
-                          <h4>Alex deago</h4>
-                          <p>Web designer</p>
-                          <ul>
-                            <li><a href="#"><i className="fa fa-facebook" /></a></li>
-                            <li><a href="#"><i className="fa fa-twitter" /></a></li>
-                            <li><a href="#"><i className="fa fa-google-plus" /></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4  col-sm-6 col-12">
-                      <div className="team-wrap">
-                        <div className="team-img">
-                          <img src="assets/images/team/03.jpg" alt />
-                        </div>
-                        <div className="team-content">
-                          <h4>Pol Biz</h4>
-                          <p>Web Developer</p>
-                          <ul>
-                            <li><a href="#"><i className="fa fa-facebook" /></a></li>
-                            <li><a href="#"><i className="fa fa-twitter" /></a></li>
-                            <li><a href="#"><i className="fa fa-google-plus" /></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-                      <div className="team-wrap">
-                        <div className="team-img">
-                          <img src="assets/images/team/04.jpg" alt />
-                        </div>
-                        <div className="team-content">
-                          <h4>Alex Jeson</h4>
-                          <p>CEO and Founder</p>
-                          <ul>
-                            <li><a href="#"><i className="fa fa-facebook" /></a></li>
-                            <li><a href="#"><i className="fa fa-twitter" /></a></li>
-                            <li><a href="#"><i className="fa fa-google-plus" /></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <TeamMembers/>
               {/* team-area end */}
               {/* testmonial-area start */}
               <div className="testmonial-area testmonial-area2 ptb-120">
